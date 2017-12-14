@@ -1,5 +1,5 @@
-# 3pay-Mobil-Odeme-WHMCS
-WHMCS için, 3pay mobil ödeme modülü.
+# 3pay-Kredi-Karti-Odemesi-WHMCS
+WHMCS için, 3pay kredi kartı ile ödeme modülü.
 
 ## Kurulum
 Dosyaları, modules/gateways/callback klasörüne atınız.
@@ -10,7 +10,7 @@ WHMCS üzerinden Ödeme Ayarları -> Ödeme Yöntemleri kısmından ödeme yönt
 Callback dosyasının çalışması için, 3pay callback urlsini;
 
 ```
-siteismi.com/modules/gateways/callback/threepaymobil.php
+siteismi.com/modules/gateways/callback/threepaycc.php
 ```
 
 olarak iletmeyi unutmayınız.
