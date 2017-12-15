@@ -6,7 +6,7 @@ function threepaycc_config() {
 		'FriendlyName' => array('Type' => 'System', 'Value' => 'Kredi Kartı'), 
 		'UserCode' => array('FriendlyName' => 'UserCode', 'Type' => 'text', 'Size' => '40'), 
 		'Pin' => array('FriendlyName' => 'Pin', 'Type' => 'text', 'Size' => '40'), 
-		'ProductCategory' => array('FriendlyName' => 'ProductCategory', 'Type' => 'text', 'Size' => '40', 'Default' => '3'),
+		'ProductCategory' => array('FriendlyName' => 'ProductCategory', 'Type' => 'text', 'Size' => '40', 'Default' => '1'),
 		'TurkcellServiceId' => array('FriendlyName' => 'TurkcellServiceId', 'Type' => 'text', 'Size' => '40', 'Default' => '1'),
 		'CCKomisyon' => array('FriendlyName' => 'Kredi Kartı Komisyon %', 'Type' => 'text', 'Size' => '40'),
 		'UstOdemeLimiti' => array('FriendlyName' => 'Üst Ödeme Limiti', 'Type' => 'text', 'Size' => '40')
