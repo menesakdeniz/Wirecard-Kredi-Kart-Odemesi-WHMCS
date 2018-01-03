@@ -33,7 +33,7 @@ function threepaycc_link($params) {
 
 	if ($Amount <= $params['UstOdemeLimiti']) {
 		if (isset($_POST['threepay']) || isset($_GET['otoyon'])) {
-			$connect = new SoapClient('http://vas.mikro-odeme.com/services/msaleservice.asmx?WSDL');
+			$connect = new SoapClient('https://www.wirecard.com.tr/vas/MSaleService.asmx?WSDL');
 			$result = $connect->SaleWithTicket($data);
 			if ($result->SaleWithTicketResult->StatusCode == '0') {
 				header('Location: '.$result->SaleWithTicketResult->RedirectUrl);
