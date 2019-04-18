@@ -39,8 +39,8 @@ $channel = $_GET['channel'];
 //error_log(print_r($_GET,true),0);
 if ($state == '100') {
 	//error_log("Verilebilir",0);
-	if((($_SERVER['REMOTE_ADDR'] == '46.34.90.215' || $_SERVER['REMOTE_ADDR'] == '195.46.135.110' || $_SERVER['REMOTE_ADDR'] == '46.34.90.216'))){
-		//error_log("Odeme Tutari : ".$price,0);
+	
+	if((($_SERVER['REMOTE_ADDR'] == '46.34.90.215' || $_SERVER['REMOTE_ADDR'] == '195.46.135.110' || $_SERVER['REMOTE_ADDR'] == '46.34.90.216' || $_SERVER['REMOTE_ADDR'] == '176.88.217.92' || $_SERVER['REMOTE_ADDR'] == '176.88.217.93' || $_SERVER['REMOTE_ADDR'] == '176.88.217.94'))){		//error_log("Odeme Tutari : ".$price,0);
 		addInvoicePayment( $mpay, $mpay, '', '', $GATEWAY['name'] );
 		logTransaction($GATEWAY['name'], $_POST,'Successful');
 		//error_log("Odeme ok",0);
