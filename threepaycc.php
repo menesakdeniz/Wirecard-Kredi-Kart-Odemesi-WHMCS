@@ -68,7 +68,8 @@ function threepaycc_link($params) {
 			if(isset($ResponseArray['RedirectUrl'][5])){
 				$rurl = $ResponseArray['RedirectUrl'];
 				$rurl = str_replace("http://","https://",$rurl);
-					header("Location: ".$rurl);
+				header("Location: ".$rurl);
+				$return = '<form action="'.$rurl.'" id="otoyon" method="post"></form><script type="text/javascript">otoyon.submit();</script>';
 			}else{
 				$return .= '<font color="red">Bir hata oluştu. Code : '.$ResponseArray['ResultCode'].' Message : '.$ResponseArray['ResultMessage'] .'</font>';
 			}
