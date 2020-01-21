@@ -23,11 +23,11 @@ class WDTicketPaymentFormRequest
     public  $InstallmentOptions; 
     public  $PaymentTypeId; 
     public  $BaseUrl;
-	    public  $CustomerInfo; 
+    public  $CustomerInfo; 
     public  $Language; 
     public static function Execute(WDTicketPaymentFormRequest $request)
     {
-		echo '$request->BaseUrl : '.$request->BaseUrl."<br />";
+		//echo '$request->BaseUrl : '.$request->BaseUrl."<br />";
         return  restHttpCaller::post($request->BaseUrl, $request->toXmlString());
     }    
     
